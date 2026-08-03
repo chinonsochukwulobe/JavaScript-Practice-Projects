@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 40px;
+}
+.faq {
+    background-color: white;
+    border: 1px soid  #ddd;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.question:hover {
+    background-color: #f0f0f0;
+}
+.answer {
+    display: none;
+    padding: 0 20px 15px;
+}
+.faq.active .answer {
+    display: block;}
+.chevron {
+    transition: transform 0.3s ease;
+}
+.faq.active .chevron {
+    transform: rotate(180deg);
+}
